@@ -47,6 +47,5 @@ file(GLOB_RECURSE nvmain_SRC
 
 add_executable(nvmain ${nvmain_SRC})
 
-target_include_directories(nvmain
-    PRIVATE .
-)
+target_include_directories(nvmain PRIVATE .)
+target_compile_features(nvmain PRIVATE cxx_std_11)
